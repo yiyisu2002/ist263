@@ -1,0 +1,10 @@
+<!DOCTYPE html>     <!---this is not a tag, its the HML version -->
+<html lang="en">    <!-- we will write HTML indside these tages, lang defines language of the page -->
+    <head>          <!-- meta data for the page -->
+        <meta charset="utf-8">  <!-- what kind charcters-->
+        <title>Week 1 Notes</title> <!-- shows on browser tab-->
+    </head>
+    <body>          <!-- if shows in the browser window it goes here -->
+        Hello World
+    </body>
+</html>
