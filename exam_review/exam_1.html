@@ -1,0 +1,68 @@
+<DOCTYPE html>                          <!-- DOCTYPE specifies the version and the type of HTML being used in the doc -->
+    <html lang="en">
+        <head>                          <!-- head define the metadata and structural elements of a HTML doc -->
+            <meta charset="utf-8">      <!-- metadate provides information about other data -->
+            <title>Exam 1 Review</title>
+        </head>
+        <body>                          <!-- body defines the main content of an HTML document, which is visible to user -->
+            <h1>Use h1 as a Title</h1>   <!-- example of using h1 -->
+            <p>nested tag is where elements contain other elements:</p>                          <!-- example of void tag br -->
+            <p>
+                <strong>Protocol</strong> is a set of rules and conventions that govern how data is exchnaged and transimitted between devices or systems in a networked environment. <br>
+                                        <!-- nested tag is where elements contain other elements -->
+                &trade; character escape
+            </p>
+            <!-- example of creating table -->
+            <table>
+                <caption>history</caption>
+                <tr>                    <!-- #1 table row -->
+                    <th>Year</th>       <!-- #2 table head -->
+                    <th>Person</th>
+                    <th>Item</th>
+                </tr>                   <!-- end of row 1-->
+                <tr>
+                    <td>1962</td>       <!-- #3 table data-->
+                    <td>Licklider</td> 
+                    <td>internet</td>
+                </tr>                   <!-- end of row 2-->
+                <tr>
+                    <td>1971</td>
+                    <td>Ray Tomlinson</td>
+                    <td>Email</td>
+                </tr>                   <!-- end of row 3 -->
+                <tr>
+                    <td>1991</td>
+                    <td>Tim Berners_Lee</td>
+                    <td>Web - WWW</td>
+                </tr>                   <!-- end of row 4 -->
+            </table>
+            <h3>tag vs. element</h3>    <!-- example of form -->
+            <form action="" method="post">  <!-- action specifies the url to which the form data should be submitted when the form is submitted -->
+                                            <!-- method specifies the http methid used to submit firn data to the server -->
+                <label for="tag">tag</label>    <!-- the label element is used to associate text labels with form inout elements-->
+                                                <!-- for attribute of the label element is used to explicitly associate the label with a specific form control-->
+                    <input type="radio" id="tag" name="tag" value="tag is whatever you are telling the code to do"> <br>
+                <label for="element">element</label>
+                    <input type="radio" id="element" name="'element" value="element is an openning and closing tag along with html elements"><br>
+                <p><strong>Textarea</strong></p>
+                <textarea id="textarea" name="textarea" rows="4" cols="50">--allows people type paragraph--</textarea><br>
+                <label>Anotehr way</label>
+                <select id="way2" name="way2">
+                    <option></option>
+                    <option value="answer1">answer 1</option>
+                    <option value="answer2">answer 2</option>
+                </select>
+            </form>
+            <h2>Embeding & Llink</h2>
+            <p>Relative link to picture, exam1_review to bio</p>
+            <a href="../lab02/su-bio.html">bio</a>      <!-- up:../ down:/filename-->
+            <p>External link to exam 1 flash card</p>
+            <a href="https://quizlet.com/673490503/ist-263-exam-1-flash-cards/?x=1jqt">exam 1</a>
+            <p>maillink</p>
+            <a href="mailto:ysu128@syr.edu">use mailto:email to create email link</a>
+            <p>embed an image</p>
+            <img src="../class_activity/participation_2.png" alt="participation">
+            <!-- src specifies the image location, alt describes image as text -->
+            <!-- iframe embed another document within the current document -->
+        </body>
+    </html>
