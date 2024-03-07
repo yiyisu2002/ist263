@@ -12,5 +12,5 @@ a {color:#472b2b;}
 footer div, .row1, .row2 {display: flex;}
 .quote {flex: 1; float: right;}
 .copy {flex: 1;}
-.row1, .row2 {padding:10px; flex:1; background-color:#f7e3d4; border-radius: 1em; margin: 10px;}
-.col1, .col2 {padding:20px; margin:10px;}
+.row1, .row2 {padding:20px; flex:1; background-color:#f7e3d4; border-radius: 1em; margin: 10px;}
+.col1, .col2, .col3, .col4 {padding:10px; margin:10px;}
