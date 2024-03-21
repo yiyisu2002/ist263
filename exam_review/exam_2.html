@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam 2 review</title>
+    <style>
+        /* selector {property: value} */
+        /* this area is for embedded CSS */
+        /* selector */
+        .par1 {color:blue;}
+        #par2 {color:green;}
+        p strong {font-size: 10px;}
+
+        .hoverexample:hover {color:red}
+        h2 {background-color: beige;}
+        #pic {background-image:url("10_1_star.JPG") ; color:aliceblue}
+
+        .box {display: flex; border-radius: 5px; margin:30px; padding:2px; background-color: rgb(23, 201, 201);} 
+        .col1 {flex:1;}
+        .col2 {flex:2; text-align: center;}
+
+        .fp {float:left}
+        img {width:300px; clear:both;} /* i'm not sure why is it still weird, hope that it won't be on example */
+        
+    </style>
+</head>
+<body>
+    <h1 style="color:violet">selectors</h1> <!-- this is an inline CSS -->
+    <p class="par1">this is a class selector</p>
+    <p id="par2">this is an id selector</p>
+    <p>this is <strong>Descendant</strong> selector </p>
+
+
+    <h1>Life Cycle</h1>
+    <p>Define Project -> Planning -> Design -> Develop -> Test -> Maintain</p>
+    <p>style document: the rules of the style of a the website</p>
+
+    <h1>Color</h1>
+    <p>Hex color #RRGGBB</p>
+    <p class="hoverexample">Pseudo Selector</p>
+
+    <h1>Background Color</h1>
+    <h2>of this one</h2>
+    <h1>Background image</h1>
+    <p id="pic">of this one</p>
+
+    <h1>Box</h1>
+    <div class="box"> <!-- div is a block element-->
+        <div class="col1">this is the column on the left</div>
+        <div class="col2">this is the column on the right</div>
+    </div>
+    <h1>Span</h1>
+    <p>paragraph <span style="background-color:beige; border: 3px solid;">try</span> and see what happened</p> <!-- span is an inline element -->
+
+    <h1>Float</h1>
+    <p class="fp">This is an example of the way float apply to a paragraph. I will type of random things to make sure we have enough things in this pagragraph to be wrapped.<br></p>
+    <img src="10_1_star.JPG">
+    <p class="fp">This is the second paragraph that used to surround the image, let's see what is going to happen to the image.</p>
+
+</body>
+</html>
