@@ -4,22 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Home Page</title>
+
+    <style>
+        header nav {padding:10px;}
+        header a:hover {color:#d1f9fb}
+        header img {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width:80%;
+            padding:20px;
+        }
+        body {
+            background-color: #d1e8fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .homebox1{
+            background-color:#d1defb; 
+            padding:15px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .first_year:hover { background-color:#d1f9fb ;}
+        .second_year:hover {background-color: #d1f9fb;}
+
+        @media only screen and (min-width:801px){
+            .first_year, .second_year {
+                flex: 1;
+                text-align: center;
+                border-radius: 20px;
+                padding: 10px;
+                padding-top: 30px;
+            }
+            .col1h, .col2h {
+                flex:1;
+                text-align: center;
+            }
+            .col1h img {
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .homebox2 {
+                display:flex;
+            }
+            header a {
+                background-color: #d1d6fb;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .row1 {display:flex;}
+        }
+
+        @media only screen and (max-width:800px){
+            .first_year, .second_year {
+                text-align:center;
+            }
+            .col1h {text-align: center;}
+            header img {display: none;}
+            nav {display: flex; justify-content: space-between; background-color: #d1d6fb;}
+        }
+    </style>
+
 </head>
 <body>
     <header>
         <nav>
-            <a href="homepage.html" id="homeicon">Home</a>
+            <a href="homepage.html">Home</a>
+            <a href="first_year.html">First Year</a>
+            <a href="second_year.html">Second Year</a>
         </nav>
     
-        <img src="../project_images/1_home_page/head_campus.jpg" alt="campus" width="100%">
+        <img src="../project_images/1_home_page/head_campus.jpg" alt="campus">
     </header>
    
     <div class="homebox1">
         <div class="row1">
             <div class="col1h">
-                <img src="../project_images/1_home_page/myself.PNG" alt="me" width="30%">
-                <p>email:ysu128@syr.edu</p><br>
-                <p>LinkedIn:<a href="http://www.linkedin.com/in/yiyi-su-212a52246" target="_blank">@Yiyi Su</a></p>      
+                <img src="../project_images/1_home_page/myself.PNG" alt="me" width="50%">
+                <p>Email:ysu128@syr.edu<br>
+                LinkedIn:<a href="http://www.linkedin.com/in/yiyi-su-212a52246" target="_blank">@Yiyi Su</a></p>      
             </div>
             <div class="col2h">
                 <h2>Welcome to Yiyi's Page!</h2>
@@ -33,10 +101,10 @@
     <h3>&#8964; Click below to learn more about me in SU &#8964;</h3>
     <div class="homebox2">
         <div class="first_year">
-            <a href="first_year.html"><img src="../project_images/1_home_page/first_year.JPG" alt="first year" width="40%"><br>First Year</a>
+            <a href="first_year.html"><img src="../project_images/1_home_page/first_year.JPG" alt="first year" width="80%"><br>First Year</a>
         </div>
         <div class="second_year">
-            <a href="second_year.html"><img src="../project_images/1_home_page/second_year.JPG" alt="second year" width="40%"><br>Second Year</a>
+            <a href="second_year.html"><img src="../project_images/1_home_page/second_year.JPG" alt="second year" width="80%"><br>Second Year</a>
         </div>
     </div>
 </body>
