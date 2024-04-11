@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+        #hamicon {width: 40px; display: none;}
+        #close {width:40px; display: none;}
+        nav {background-color: aquamarine;}
+        a {margin: 5px;
+            padding:15px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            #hamicon{display: block;}
+            #close{display:block;} /* change links to block that makes them take up full width */
+            a {display: block;
+                border: 1px solid black;
+            } 
+            #navlinks {display:none;}
+            .row {display: flex; justify-content: space-between;}
+        }
+
+        
+    </style>
+
+    <script>
+        function showNav() {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    </script>
+
+</head>
+<body>
+    <div class="row">
+        <img id="hamicon" onclick="showNav();" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger.icon">
+        <p onclick="hideNav();" id="close">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>The Hamburger Menus</h1>
+    <h2>CSS</h2>
+    <ol>
+        <li>large - no hamburger</li>
+        <li>Small - show hamburger</li>
+        <li>large - no X</li>
+        <li>small - show X</li>
+        <li>large - link side by side</li>
+        <li>small - stack links</li>
+        <li>small - links initially hidden</li>
+    </ol>
+    <h2>JavaScript</h2>
+    <ol>
+        <li>Click on Hamburger to Show links</li>
+        <li>Click on the X to Hide Links</li>
+    </ol>
+</body>
+</html>
