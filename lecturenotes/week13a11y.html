@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ally</title>
+    <style>
+        .skip {
+            background-color: #333333;
+            color:#ffffff;
+            padding: 8px;
+            text-decoration: none;
+            border: 2px solid #ffa500;
+            position:absolute;
+            top: 10px;
+            left: -999px; /* push off left side of browser */
+        }
+        .skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- tab order is for complex websites with a lot of stuff -->
+    <nav>
+        <a href="#skip" class="skip" tabindex="1">Skip to Content</a>
+        <a href="http://www.amazon.com" tabindex="3">Amazon</a>
+        <a href="http://www.google.com" tabindex="2">Google</a>
+        <a href="http://www.ebay.com" tabindex="4">Ebay</a>
+    </nav>
+    <h1>Ally HTML & CSS</h1>
+    <p id="skip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vel ex officia voluptatibus! Nobis, dicta quam quisquam ipsum commodi nihil veniam ipsa esse adipisci corrupti harum tempora placeat laboriosam cumque.</p>
+
+</body>
+</html>

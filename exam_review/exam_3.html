@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- device-width is the size of viewport; 1.0 is zoom level; viewport is the meta tag allows our website to load full size on a cell phone -->
+    <title>exam 3 review</title>
+    <style>
+        /* week 9 */
+        #centerparagraph {text-align: center;}
+        .blockbox {display: flex; justify-content: center;}
+        #imgblock {display:block; width:30%; margin:0 auto;}
+
+        .justbox1 {display: flex; justify-content: flex-end;}
+        .justbox2 {display: flex; justify-content: flex-start;}
+        .justbox3 {display: flex; justify-content: space-around;}
+        .justbox4 {display:flex; justify-content: space-between;}
+
+        /* week 10 */
+        #self {max-width:50%;}
+        #wrapbox {display: flex; flex-wrap: wrap; justify-content: space-between;}
+        @media only screen and (max-width:800px) {
+            #largep {display: none;}
+        }
+        @media only screen and (min-width:801px) {
+            #smallp {display: none;}
+            span {display: none;}
+        }
+        span { background-color: aqua;}
+    </style>
+
+    <!-- week 11 -->
+    <script> /* this is embbeded script */
+        function description(){
+            alert('the alert will display text in a dialog box that pops up on the screen, this alert appears becasue the javascript event fo clicking happened')
+        }
+        function colorchange(){
+            document.getElementById("nodeinfo").style.color='#45ee37'
+        }
+    </script>
+    <script src="somthing.js"></script><!-- this is external script-->
+</head>
+<body>
+    <h1>advanced layout</h1>
+    <!-- inline element -->
+    <p id="centerparagraph">
+        this paragraph will be centered 
+    </p>
+    <!-- block -->
+    <img src="../images/fall2.JPG" alt="imge" id="imgblock">
+    <div class="blockbox">
+        <div>block 1</div>
+        <div>block 2</div>
+    </div>
+
+    <!-- justify content -->
+    <div class="justbox1">
+        <div>box 1</div>
+        <div>box 2</div>
+        <div>box 2</div>
+    </div>
+    <div class="justbox2">
+        <div>box 1</div>
+        <div>box 2</div>
+        <div>box 2</div>
+    </div>
+    <div class="justbox3">
+        <div>box 1</div>
+        <div>box 2</div>
+        <div>box 2</div>
+    </div>
+    <div class="justbox4">
+        <div>box 1</div>
+        <div>box 2</div>
+        <div>box 2</div>
+    </div>
+
+    <h1>Reponsive Design</h1>
+    <img src="../images/myself.JPG" alt="self" id="self">
+    <div id="wrapbox">
+        <div>box 1 with some thing</div>
+        <div>box 2 with some more</div>
+        <div>box 3 make it larger</div>
+        <div>box 4 i don't know</div>
+        <div>box 5 it should be enough</div>
+    </div>
+    <p id="largep">media query sentence on large screen</p>
+    <p id="smallp">media query sentence on small screen</p>
+    <p><span>hello:this is yiyi, it was nice to meet you, have a nice day!</span> the sentence will becomes a block and disappear on large screen</p>
+
+    <h1 onclick="description();">JavaScript</h1> <!-- script can no anywhere on the page-->
+    <p>DOM refers to Document Object Model</p><br>
+    <p id="nodeinfo" onmouseover="colorchange();">
+        Each element on the page is referred to as a node<br>
+        The attributes inside the tags are nodes <br>
+        Content inside the elements are nodes <br>
+    </p>
+
+
+
+</body>
+</html>
