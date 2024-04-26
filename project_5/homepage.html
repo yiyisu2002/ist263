@@ -13,7 +13,7 @@
 
     <style>
         header nav {padding:10px;}
-        header a:hover {color:#d1f9fb}
+        header a:hover {color:#d1f9fb;}
         header img {
             display:block;
             margin-left: auto;
@@ -38,6 +38,8 @@
         .second_year:hover {background-color: #d1f9fb;}
         .first_year img, .second_year img {width: 80%;}
 
+        .homebox2 a, header a {text-decoration-line: none;}
+
         @media only screen and (min-width:801px){
             .first_year, .second_year {
                 flex: 1;
@@ -45,6 +47,9 @@
                 border-radius: 20px;
                 padding: 10px;
                 padding-top: 30px;
+            }
+            #home_small, #first_small, #second_small {
+                display:none;
             }
             .col1h, .col2h {
                 flex:1;
@@ -63,6 +68,7 @@
                 background-color: #d1d6fb;
                 padding: 10px;
                 border-radius: 5px;
+                font-size: 1.5rem;
             }
             .row1 {display:flex;}
         }
@@ -74,21 +80,40 @@
             .col1h {text-align: center;}
             .col1h img {width: 50%;}
             header img {display: none;}
-            nav {display: flex; 
-                justify-content: space-between; 
+            #home_large, #first_large, #second_large {
+                display: none;
+            }
+            nav div div {
+                font-size: 2rem;
+                padding:15px;
                 background-color: #d1d6fb;
             }
             .col2h h2 {text-align: center;}
         }
+        
     </style>
+    <script>
+
+    </script>
 
 </head>
 <body>
     <header>
         <nav>
-            <a href="homepage.html">Home</a>
-            <a href="first_year.html">First Year</a>
-            <a href="second_year.html">Second Year</a>
+            <a id="home_large" href="homepage.html">Home</a>
+            <a id="first_large" href="first_year.html">First Year</a>
+            <a id="second_large" href="second_year.html">Second Year</a>
+            <div>
+                <div>
+                    <a id="home_small" href="homepage.html">Home</a>
+                </div>
+                <div>
+                    <a id="first_small" href="first_year.html">First Year</a>
+                </div>
+                <div>
+                    <a id="second_small" href="second_year.html">Second Year</a>
+                </div>
+            </div>
         </nav>
     
         <img src="../project_images/1_home_page/head_campus.jpg" alt="campus">
