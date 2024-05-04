@@ -29,6 +29,22 @@ header a:hover {color:#d1f9fb;}
         font-size: 1.2rem;
 
     }
+    .scrollimage {
+        width: 80%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .scrollsection {
+        height: 300px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .box4 {
+        display:flex;
+        margin: 10px;
+    }
 }
 
 @media only screen and (max-width:800px){
@@ -41,20 +57,39 @@ header a:hover {color:#d1f9fb;}
     .box1 div div, .box2 div div, .box3 div div, .box4 div div {
         align-items: center;
     }
-   
+    .scrollimage {
+        width: 80%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .scrollsection {
+        height: 300px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    nav div div {
+        border: solid black;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: #99a3f16d;
+    }
+    header nav a {font-size: 1.5rem;}
+    p {font-size: 1.5rem;}
     }
 
-/* ------------------------------- */
+/* ---------------------------------------------- */
 
 header nav div div a {
     font-size: 1.5rem;
     justify-content: space-around;
-    background-color: #d1d6fb;
 }
 
 .backicon {
     border:solid #000000;
     padding: 2px;
+    border-radius: 3px;
 }
 
 .box1 {
@@ -78,10 +113,6 @@ header nav div div a {
     margin: 5px;
 }
 
-.box4 {
-    display:flex;
-    margin: 10px;
-}
 
 #fycol1 img, #fycol2 img {
     width: 80%;
@@ -126,15 +157,16 @@ header nav div div a {
     border: none;
 }
 
-.scrollimage {
-    width: 80%;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.skip {
+    background-color: #333333;
+    color:#ffffff;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid #ffa500;
+    position:absolute;
+    top: 10px;
+    left: -999px; /* push off left side of browser */
 }
-.scrollsection {
-    height: 200px;
-    width: 300px;
-    overflow-y: scroll;
+.skip:focus {
+    left: 10px;
 }

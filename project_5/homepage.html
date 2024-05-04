@@ -90,6 +90,19 @@
             }
             .col2h h2 {text-align: center;}
         }
+        .skip {
+            background-color: #333333;
+            color:#ffffff;
+            padding: 8px;
+            text-decoration: none;
+            border: 2px solid #ffa500;
+            position:absolute;
+            top: 10px;
+            left: -999px; /* push off left side of browser */
+        }
+        .skip:focus {
+            left: 10px;
+        }
         
     </style>
     <script>
@@ -100,9 +113,10 @@
 <body>
     <header>
         <nav>
-            <a id="home_large" href="homepage.html">Home</a>
-            <a id="first_large" href="first_year.html">First Year</a>
-            <a id="second_large" href="second_year.html">Second Year</a>
+            <a href="#skip" class="skip" tabindex="1">Skip to Content</a>
+            <a id="home_large" href="homepage.html" tabindex="2">Home</a>
+            <a id="first_large" href="first_year.html" tabindex="3">First Year</a>
+            <a id="second_large" href="second_year.html" tabindex="4">Second Year</a>
             <div>
                 <div>
                     <a id="home_small" href="homepage.html">Home</a>
@@ -119,7 +133,7 @@
         <img src="../project_images/1_home_page/head_campus.jpg" alt="campus">
     </header>
    
-    <div class="homebox1">
+    <div class="homebox1" id="skip">
         <div class="row1">
             <div class="col1h">
                 <img src="../project_images/1_home_page/myself.PNG" alt="me">
