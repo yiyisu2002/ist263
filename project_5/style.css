@@ -170,3 +170,5 @@ header nav div div a {
 .skip:focus {
     left: 10px;
 }
+
+h5 {text-align: center;}
